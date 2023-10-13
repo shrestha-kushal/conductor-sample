@@ -1,0 +1,3 @@
+-i https://pypi.org/simple
+cargo-lambda==0.21.1
+ziglang==0.11.0

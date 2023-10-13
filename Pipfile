@@ -1,0 +1,7 @@
+[packages]
+cargo-lambda = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"

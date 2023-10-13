@@ -1,0 +1,31 @@
+[package]
+name = "conductor"
+version = "0.2.0"
+edition = "2021"
+
+[dependencies]
+lambda_runtime = "*"
+serde = "*"
+tokio = { version = "*", features = ["macros"] }
+tracing = { version = "*", features = ["log"] }
+tracing-subscriber = { version = "*", default-features = false, features = ["fmt"] }
+serde_json = "*"
+aws-config = "*"
+time = { version = "*", features = ["macros", "formatting", "parsing", "std"] }
+url = "*"
+http = "*"
+aws-sigv4 = "*"
+reqwest = {version = "*", default-features = false, features = ["rustls-tls", "json", "stream"]}
+uuid = {version = "*", features = ["v4", "fast-rng", "macro-diagnostics"]}
+aws-sign-v4 = "*"
+aws-smithy-http = "*"
+aws-types = "*"
+aws-sig-auth = "*"
+aws-sdk-sfn = "*"
+aws-credential-types = "*"
+simple-error = "*"
+
+[dev-dependencies]
+tokio-test = "*"
+rand = { version = "*", default-features = true}
+partial_application = "*"
